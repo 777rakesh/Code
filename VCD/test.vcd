@@ -1,0 +1,9 @@
+$timescale 1 us $end
+$date Mon Jan 04 22:37:09 2021 
+$end
+$comment Random read 4K 100% $end
+$scope module host $end
+$var integer 10 $ tag $end
+$unscope $end
+$enddefinitions $end
+9$
