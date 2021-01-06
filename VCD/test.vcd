@@ -1,9 +1,64 @@
 $timescale 1 us $end
-$date Mon Jan 04 22:37:09 2021 
-$end
+$date Wed Jan 06 11:52:23 2021
+ $end
 $comment Random read 4K 100% $end
-$scope module host $end
-$var integer 10 $ tag $end
-$unscope $end
+$scope module top $end
+$scope module Host $end
+$var wire 1 ? SLat $end
+$upscope $end
+$scope module HCore $end
+$var wire 1 > HCoreFW $end
+$upscope $end
+$scope module FCore $end
+$var wire 1 < FCoreFW $end
+$upscope $end
+$scope module Controller $end
+$var wire 1 | HDMA $end
+$scope module CH0 $end
+$var wire 1 } FDMACH0 $end
+$upscope $end
+$scope module CH1 $end
+$var wire 1 { FDMACH1 $end
+$upscope $end
+$scope module CH2 $end
+$var wire 1 ] FDMACH2 $end
+$upscope $end
+$scope module CH3 $end
+$var wire 1 [ FDMACH3 $end
+$upscope $end
+$upscope $end
+$scope module NAND $end
+$scope module CH0Bank0 $end
+$var wire 1 + programcharTLCCH0Bank0 $end
+$var wire 1 ` programcharSLCCH0Bank0 $end
+$var wire 1 ~ readCH0Bank0 $end
+$var wire 1 ) eraseCH0Bank0 $end
+$upscope $end
+$upscope $end
+$upscope $end
 $enddefinitions $end
-9$
+#0
+0?
+0>
+0<
+0|
+0}
+0{
+0]
+0[
+0+
+0`
+0~
+0)
+#100
+1?
+#102
+0?
+#105
+1}
+#115
+0}
+#105
+1|
+#115
+0|
