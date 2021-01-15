@@ -24,7 +24,8 @@ class VCDWriter {
 
 private:
     ofstream vcdOut;
-    vector <char> identifiers {'!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '~', '`', '+', '[', ']', '{', '}', '|', '<', '>', '?'};
+    vector <char> identifiers {'!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '~', '`', '+', '[', ']', '{', '}', '|', '<', '>', '?',
+                               'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N'};
     vector <char> idInUse;
 
     void add_date()
@@ -147,7 +148,7 @@ public:
 
 int main()
 {
-    VCDWriter *vcdwriter = new VCDWriter("D:/Rakesh/Github/Tools/VCD/test.vcd", 1, "us");
+    VCDWriter *vcdwriter = new VCDWriter("C:/Rakesh/Code/Github/Tools/VCD/test.vcd", 1, "us");
     vcdwriter->add_comment("Random read 4K 100%");
     
     vcdwriter->add_scope("top");
@@ -188,16 +189,78 @@ int main()
             char readCH0Bank0 =  vcdwriter->add_var("wire", "1", "readCH0Bank0");
             char eraseCH0Bank0 =  vcdwriter->add_var("wire", "1", "eraseCH0Bank0");
         vcdwriter->add_upscope();
+        vcdwriter->add_scope("CH1Bank0");
+            char programTLCCH1Bank0 =  vcdwriter->add_var("wire", "1", "programcharTLCCH1Bank0");
+            char programSLCCH1Bank0 =  vcdwriter->add_var("wire", "1", "programcharSLCCH1Bank0");
+            char readCH1Bank0 =  vcdwriter->add_var("wire", "1", "readCH1Bank0");
+            char eraseCH1Bank0 =  vcdwriter->add_var("wire", "1", "eraseCH1Bank0");
+        vcdwriter->add_upscope();
+        vcdwriter->add_scope("CH2Bank0");
+            char programTLCCH2Bank0 =  vcdwriter->add_var("wire", "1", "programcharTLCCH2Bank0");
+            char programSLCCH2Bank0 =  vcdwriter->add_var("wire", "1", "programcharSLCCH2Bank0");
+            char readCH2Bank0 =  vcdwriter->add_var("wire", "1", "readCH2Bank0");
+            char eraseCH2Bank0 =  vcdwriter->add_var("wire", "1", "eraseCH2Bank0");
+        vcdwriter->add_upscope();
+        vcdwriter->add_scope("CH3Bank0");
+            char programTLCCH3Bank0 =  vcdwriter->add_var("wire", "1", "programcharTLCCH3Bank0");
+            char programSLCCH3Bank0 =  vcdwriter->add_var("wire", "1", "programcharSLCCH3Bank0");
+            char readCH3Bank0 =  vcdwriter->add_var("wire", "1", "readCH3Bank0");
+            char eraseCH3Bank0 =  vcdwriter->add_var("wire", "1", "eraseCH3Bank0");
+        vcdwriter->add_upscope();
     vcdwriter->add_upscope();
 
     vcdwriter->add_upscope();
     vcdwriter->add_enddefinitions();
 
-    vcdwriter->add_valueChange(VAR_TYPE_SCALAR, sLat, "100", "1");
-    vcdwriter->add_valueChange(VAR_TYPE_SCALAR, sLat, "102", "0");
+    // QD4
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, sLat, 10, 2);
+    
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, sLat, 12, 2);
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, hCoreFW, 12, 2);
+    
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, sLat, 14, 2);
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, hCoreFW, 14, 2);
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, fCoreFW, 12, 4);
 
-    vcdwriter->add_activity(VAR_TYPE_SCALAR, fDMACH0, 105, 10);
-    vcdwriter->add_activity(VAR_TYPE_SCALAR, hDMA, 105, 10);
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, sLat, 16, 2);
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, hCoreFW, 16, 2);
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, fCoreFW, 16, 4);
+
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, hCoreFW, 18, 2);
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, fCoreFW, 20, 4);
+
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, fCoreFW, 24, 4);
+
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, readCH0Bank0, 16, 50);
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, fDMACH0, 66, 8);
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, hDMA, 74, 10);
+
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, readCH1Bank0, 20, 50);
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, fDMACH1, 70, 8);
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, hDMA, 84, 10);
+    
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, readCH2Bank0, 24, 50);
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, fDMACH2, 74, 8);
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, hDMA, 94, 10);
+
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, readCH3Bank0, 28, 50);
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, fDMACH3, 78, 8);
+    vcdwriter->add_activity(VAR_TYPE_SCALAR, hDMA, 104, 10);
+  
+    /*
+
+    while
+        numcmd = 50
+
+        subqueue
+
+        h2fqueue
+        ch0b0queue
+        ch0dmaqueue
+
+        hostdmaqueue
+
+    */
 
     delete vcdwriter;
     return 0;
