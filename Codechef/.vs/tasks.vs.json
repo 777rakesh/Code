@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-VACCINE1",
+      "appliesTo": "cpp_project/VACCINE1.cpp",
+      "type": "launch"
+    }
+  ]
+}
