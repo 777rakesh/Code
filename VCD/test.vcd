@@ -1,43 +1,75 @@
 $timescale 1 us $end
-$date Wed Jan 06 11:52:23 2021
+$date Wed Jan 06 12:56:19 2021
  $end
 $comment Random read 4K 100% $end
 $scope module top $end
 $scope module Host $end
-$var wire 1 ? SLat $end
+$var wire 1 N SLat $end
 $upscope $end
 $scope module HCore $end
-$var wire 1 > HCoreFW $end
+$var wire 1 M HCoreFW $end
 $upscope $end
 $scope module FCore $end
-$var wire 1 < FCoreFW $end
+$var wire 1 L FCoreFW $end
 $upscope $end
 $scope module Controller $end
-$var wire 1 | HDMA $end
+$var wire 1 K HDMA $end
 $scope module CH0 $end
-$var wire 1 } FDMACH0 $end
+$var wire 1 J FDMACH0 $end
 $upscope $end
 $scope module CH1 $end
-$var wire 1 { FDMACH1 $end
+$var wire 1 I FDMACH1 $end
 $upscope $end
 $scope module CH2 $end
-$var wire 1 ] FDMACH2 $end
+$var wire 1 H FDMACH2 $end
 $upscope $end
 $scope module CH3 $end
-$var wire 1 [ FDMACH3 $end
+$var wire 1 G FDMACH3 $end
 $upscope $end
 $upscope $end
 $scope module NAND $end
 $scope module CH0Bank0 $end
-$var wire 1 + programcharTLCCH0Bank0 $end
-$var wire 1 ` programcharSLCCH0Bank0 $end
-$var wire 1 ~ readCH0Bank0 $end
-$var wire 1 ) eraseCH0Bank0 $end
+$var wire 1 F programcharTLCCH0Bank0 $end
+$var wire 1 E programcharSLCCH0Bank0 $end
+$var wire 1 D readCH0Bank0 $end
+$var wire 1 C eraseCH0Bank0 $end
+$upscope $end
+$scope module CH1Bank0 $end
+$var wire 1 B programcharTLCCH1Bank0 $end
+$var wire 1 A programcharSLCCH1Bank0 $end
+$var wire 1 ? readCH1Bank0 $end
+$var wire 1 > eraseCH1Bank0 $end
+$upscope $end
+$scope module CH2Bank0 $end
+$var wire 1 < programcharTLCCH2Bank0 $end
+$var wire 1 | programcharSLCCH2Bank0 $end
+$var wire 1 } readCH2Bank0 $end
+$var wire 1 { eraseCH2Bank0 $end
+$upscope $end
+$scope module CH3Bank0 $end
+$var wire 1 ] programcharTLCCH3Bank0 $end
+$var wire 1 [ programcharSLCCH3Bank0 $end
+$var wire 1 + readCH3Bank0 $end
+$var wire 1 ` eraseCH3Bank0 $end
 $upscope $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
+0N
+0M
+0L
+0K
+0J
+0I
+0H
+0G
+0F
+0E
+0D
+0C
+0B
+0A
 0?
 0>
 0<
@@ -48,17 +80,99 @@ $enddefinitions $end
 0[
 0+
 0`
-0~
-0)
-#100
+#10
+1N
+#12
+0N
+#12
+1N
+#14
+0N
+#12
+1M
+#14
+0M
+#14
+1N
+#16
+0N
+#14
+1M
+#16
+0M
+#12
+1L
+#16
+0L
+#16
+1N
+#18
+0N
+#16
+1M
+#18
+0M
+#16
+1L
+#20
+0L
+#18
+1M
+#20
+0M
+#20
+1L
+#24
+0L
+#24
+1L
+#28
+0L
+#16
+1D
+#66
+0D
+#66
+1J
+#74
+0J
+#74
+1K
+#84
+0K
+#20
 1?
-#102
+#70
 0?
-#105
+#70
+1I
+#78
+0I
+#84
+1K
+#94
+0K
+#24
 1}
-#115
+#74
 0}
-#105
-1|
-#115
-0|
+#74
+1H
+#82
+0H
+#94
+1K
+#104
+0K
+#28
+1+
+#78
+0+
+#78
+1G
+#86
+0G
+#104
+1K
+#114
+0K
