@@ -19,7 +19,18 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CodeChef\FLOW007.cpp" />
+    <ClCompile Include="CodeChef\LAPIN.cpp" />
+    <ClCompile Include="CodeChef\TEST.cpp" />
+    <ClCompile Include="CodeChef\VACCINE1.cpp" />
+    <ClCompile Include="GeeksforGeeks\findNth.cpp" />
+    <ClCompile Include="GeeksforGeeks\kmatchingpair_day3.cpp" />
     <ClCompile Include="practice.cpp" />
+    <ClCompile Include="SYNBAC.cpp" />
+    <ClCompile Include="TopCoder\ABBADiv1.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -89,7 +100,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>

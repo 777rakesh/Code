@@ -1,3 +1,4 @@
+#if 0
 #include <iostream>
 #include <vector>
 #include <iterator>
@@ -28,3 +29,4 @@ int main()
 
     return 0;
 }
+#endif

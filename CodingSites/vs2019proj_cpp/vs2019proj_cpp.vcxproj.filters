@@ -13,10 +13,57 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="CodeChef">
+      <UniqueIdentifier>{5588a589-0833-4cca-b7c0-9fcc4bd1b514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GeeksForGeeks">
+      <UniqueIdentifier>{16694847-d7b0-4e91-8237-a168582b596f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TopCoder">
+      <UniqueIdentifier>{4e0c31e2-2e46-483b-9da3-5a1232a20f90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodeChef\Solved">
+      <UniqueIdentifier>{5b7175f9-7aec-476a-8a2e-fa89c0617ac7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GeeksForGeeks\Solved">
+      <UniqueIdentifier>{adca45bc-fbc2-4b52-a924-4a33c91281f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TopCoder\Solved">
+      <UniqueIdentifier>{5298829d-6451-4018-9f0d-516b99c44c76}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="practice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CodeChef\FLOW007.cpp">
+      <Filter>CodeChef\Solved</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeChef\LAPIN.cpp">
+      <Filter>CodeChef\Solved</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeChef\TEST.cpp">
+      <Filter>CodeChef\Solved</Filter>
+    </ClCompile>
+    <ClCompile Include="CodeChef\VACCINE1.cpp">
+      <Filter>CodeChef\Solved</Filter>
+    </ClCompile>
+    <ClCompile Include="GeeksforGeeks\kmatchingpair_day3.cpp">
+      <Filter>GeeksForGeeks\Solved</Filter>
+    </ClCompile>
+    <ClCompile Include="GeeksforGeeks\findNth.cpp">
+      <Filter>GeeksForGeeks\Solved</Filter>
+    </ClCompile>
+    <ClCompile Include="TopCoder\ABBADiv1.cpp">
+      <Filter>TopCoder\Solved</Filter>
+    </ClCompile>
+    <ClCompile Include="SYNBAC.cpp">
+      <Filter>CodeChef</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input.txt">
+      <Filter>CodeChef</Filter>
+    </Text>
   </ItemGroup>
 </Project>

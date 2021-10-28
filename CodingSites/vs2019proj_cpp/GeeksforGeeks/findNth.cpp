@@ -1,3 +1,4 @@
+#if 0
 #include <iostream>
 #include <algorithm>
 #include <map>
@@ -48,3 +49,4 @@ int main()
 
     return 0;
 }
+#endif

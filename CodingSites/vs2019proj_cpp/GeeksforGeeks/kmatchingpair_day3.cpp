@@ -1,3 +1,4 @@
+#if 0
 // { Driver Code Starts
 // Initial Template for C++
 
@@ -162,3 +163,4 @@ int main() {
     return 1;
 }
 // } Driver Code Ends
+#endif

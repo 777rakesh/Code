@@ -1,3 +1,4 @@
+#if 0
 #include <iostream>
 #include <vector>
 #include <math.h>
@@ -57,3 +58,4 @@ int main()
 
 	return 0;
 }
+#endif

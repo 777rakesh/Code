@@ -1,3 +1,5 @@
+#if 0
+
 #include <iostream>
 
 inline void print(int* out)
@@ -49,3 +51,5 @@ int main()
 
 	return 0;
 }
+
+#endif

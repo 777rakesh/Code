@@ -1,3 +1,4 @@
+#if 0
 #include <iostream>
 #include <string.h>
 #include <vector>
@@ -90,3 +91,4 @@ int main()
 
 	return 0;
 }
+#endif
