@@ -31,6 +31,9 @@
     <Filter Include="TopCoder\Solved">
       <UniqueIdentifier>{5298829d-6451-4018-9f0d-516b99c44c76}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Leetcode">
+      <UniqueIdentifier>{b28ef673-0d21-4500-a2d2-595daad460b2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="practice.cpp">
@@ -60,10 +63,16 @@
     <ClCompile Include="SYNBAC.cpp">
       <Filter>CodeChef</Filter>
     </ClCompile>
+    <ClCompile Include="Two_Sum.cpp">
+      <Filter>Leetcode</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
       <Filter>CodeChef</Filter>
+    </Text>
+    <Text Include="in.txt">
+      <Filter>Leetcode</Filter>
     </Text>
   </ItemGroup>
 </Project>
