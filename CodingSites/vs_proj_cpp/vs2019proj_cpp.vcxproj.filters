@@ -37,6 +37,9 @@
     <Filter Include="Linkedin_Bill_weiman">
       <UniqueIdentifier>{14ab94da-59f4-423c-860e-b64534f2c718}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Leetcode\Contest79">
+      <UniqueIdentifier>{66f56b05-ea46-4312-abe7-c14739e3d64b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="practice.cpp">
@@ -71,6 +74,12 @@
     </ClCompile>
     <ClCompile Include="Ex_Files_C_Plus_Plus_STL_Linkedincourse_Bill_weinman\Exercise Files\Ch01\01_02\Begin\templates.cpp">
       <Filter>Linkedin_Bill_weiman</Filter>
+    </ClCompile>
+    <ClCompile Include="6083.cpp">
+      <Filter>Leetcode\Contest79</Filter>
+    </ClCompile>
+    <ClCompile Include="6084.cpp">
+      <Filter>Leetcode\Contest79</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
