@@ -81,6 +81,18 @@
     <ClCompile Include="6084.cpp">
       <Filter>Leetcode\Contest79</Filter>
     </ClCompile>
+    <ClCompile Include="88MergeSortedArray.cpp">
+      <Filter>Leetcode</Filter>
+    </ClCompile>
+    <ClCompile Include="2285_MaximumTotalImportanceofRoads.cpp">
+      <Filter>Leetcode\Contest79</Filter>
+    </ClCompile>
+    <ClCompile Include="509_Fib.cpp">
+      <Filter>Leetcode</Filter>
+    </ClCompile>
+    <ClCompile Include="1137_N-th_Tribonacci_Number.cpp">
+      <Filter>Leetcode</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
