@@ -40,6 +40,9 @@
     <Filter Include="Leetcode\Contest79">
       <UniqueIdentifier>{66f56b05-ea46-4312-abe7-c14739e3d64b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Leetcode\Contest80">
+      <UniqueIdentifier>{d3c93605-f546-451a-9a8c-ba06e60863b6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="practice.cpp">
@@ -91,6 +94,21 @@
       <Filter>Leetcode</Filter>
     </ClCompile>
     <ClCompile Include="1137_N-th_Tribonacci_Number.cpp">
+      <Filter>Leetcode</Filter>
+    </ClCompile>
+    <ClCompile Include="70_ClimbingStairs.cpp">
+      <Filter>Leetcode</Filter>
+    </ClCompile>
+    <ClCompile Include="746_MinCostClimbingStairs.cpp">
+      <Filter>Leetcode</Filter>
+    </ClCompile>
+    <ClCompile Include="6095_StrongPasswordCheckerII.cpp">
+      <Filter>Leetcode\Contest80</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Leetcode\Contest80</Filter>
+    </ClCompile>
+    <ClCompile Include="spiral-matrix.cpp">
       <Filter>Leetcode</Filter>
     </ClCompile>
   </ItemGroup>

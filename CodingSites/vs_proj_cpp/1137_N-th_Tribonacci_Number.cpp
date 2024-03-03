@@ -1,3 +1,4 @@
+#if 0
 #include <vector>
 #include <iostream>
 using namespace std;
@@ -25,3 +26,4 @@ int main()
 
     return 0;
 }
+#endif
